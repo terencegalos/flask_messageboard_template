@@ -20,3 +20,6 @@ def create_app():
     app.logger.debug(f"Current Environment: {os.getenv('ENVIRONMENT')}")
     app.logger.debug(f"Using Database: {app.config.get('DATABASE')}")
     return app
+
+
+app = create_app()
